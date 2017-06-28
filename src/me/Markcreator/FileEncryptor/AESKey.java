@@ -14,6 +14,7 @@ public class AESKey {
 		
 		// Build AES key
 		try {
+			//Pad key to right length
 			MessageDigest sha = MessageDigest.getInstance("SHA-1");
 			keyBytes = sha.digest(keyBytes);
 			keyBytes = Arrays.copyOf(keyBytes, 16);
