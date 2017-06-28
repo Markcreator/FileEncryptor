@@ -4,7 +4,7 @@ import javax.crypto.Cipher;
 
 public class FileEncryptorTest {
 
-	public static void test(String text, String keyStr) {
+	public static void test(String keyStr, String text) {
 		try {
 			// String info
 			byte[] input = text.getBytes();
